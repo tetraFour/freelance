@@ -1,0 +1,54 @@
+.header {
+    padding: 60px 0;
+    border-bottom: 2px solid #EFEFEF;
+
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 70px;
+    }
+
+    &__tel {
+        margin-right: auto;
+    }
+
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        li {
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__nav-list-item {
+        margin-right: 30px;
+        &::last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__nav-link {
+        font-size: 14px;
+        font-weight: 400;
+        &_login {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+.vue-selector {
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    margin-right: 35px;
+    &__flag {
+        margin-right: 12px;
+    }
+}

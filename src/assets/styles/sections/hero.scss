@@ -1,0 +1,17 @@
+.hero {
+    padding: 170px 0;
+    &__title {
+        font-size: 72px;
+        max-width: 775px;
+        font-weight: 800;
+        margin-bottom: 60px;
+    }
+    &__desc {
+        max-width: 650px;
+        margin-bottom: 75px;
+        font-size: 20px;
+        span {
+            font-weight: 700;
+        }
+    }
+}

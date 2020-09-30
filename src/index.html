@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +11,177 @@
   </head>
   <body>
     <div id="root">
-      <header></header>
-      <main></main>
+      <header class="header">
+        <div class="header__content container">
+          <a href="#" class="header__logo">
+            <img src="./assets/images/logo.svg" alt="логотип" />
+          </a>
+          <div class="vue-selector">
+            <img
+              src="./assets/images/lang.svg"
+              alt="флаг"
+              class="vue-selector__flag"
+            />
+            русский
+            <img
+              src="./assets/images/icon/base/down-small.svg"
+              alt="стрелка вниз"
+            />
+          </div>
+          <a href="tel:+77760707000" class="header__tel" aria-label="телефон"
+            >+7 (776) 070-7000</a
+          >
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item">
+                <a href="#" class="header__nav-link">Об академии</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="#" class="header__nav-link">Спикеры</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="#" class="header__nav-link">Курсы</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="#" class="header__nav-link">Отзывы</a>
+              </li>
+              <li class="header__nav-list-item">
+                <a href="#" class="header__nav-link header__nav-link_login">
+                  <img
+                    src="./assets/images/icon/system/login.svg"
+                    alt="войти в аккаунт"
+                  />войти</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero__title">Online академия Архетип</h1>
+            <p class="hero__desc">
+              Курсы, которые помогут освоить
+              <span>востребованную профессию с нуля</span> или изучить новую
+              <span>специализацию</span>
+            </p>
+            <a href="#" class="btn btn__danger"
+              >начать обучение сейчас
+              <img
+                src="./assets/images/icon/base/down-small-right-white.svg"
+                alt=""
+            /></a>
+          </div>
+        </section>
+        <section class="category">
+          <div class="container">
+            <h2 class="category__title">Выбери профессию и направление</h2>
+            <ul class="category__tab-list-control">
+              <li class="category__tab-list-control-item">
+                <button class="category__tab-control">Дизайн</button>
+              </li>
+              <li class="category__tab-list-control-item">
+                <button
+                  class="category__tab-control category__tab-control_active"
+                >
+                  Маркетинг
+                </button>
+              </li>
+              <li class="category__tab-list-control-item">
+                <button class="category__tab-control">Программирование</button>
+              </li>
+              <li class="category__tab-list-control-item">
+                <button class="category__tab-control">Управление</button>
+              </li>
+              <li class="category__tab-list-control-item">
+                <button class="category__tab-control">Игры</button>
+              </li>
+            </ul>
+            <ul class="category__tabs">
+              <li class="category__tabs-item">
+                <a href="#" class="category__tabs-link">Графический дизайнер</a>
+                <span class="category__tabs-lessons">150 уроков</span>
+                <span class="category__tabs-lessons">200 заданий</span>
+                <p class="category__tabs-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+                  varius et a nulla placerat viverra. Mattis aliquam hac
+                  pulvinar eget urna, sollicitudin feugiat vestibulum. Elementum
+                  sed sit odio senectus sem sit morbi lacus. Vitae at ac arcu
+                  posuere. Euismod gravida lacinia donec facilisis massa mauris.
+                  Lorem tortor ultrices.
+                </p>
+              </li>
+              <li class="category__tabs-item">
+                <a href="#" class="category__tabs-link">Графический дизайнер</a>
+                <span class="category__tabs-lessons">150 уроков</span>
+                <span class="category__tabs-lessons">200 заданий</span>
+                <p class="category__tabs-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+                  varius et a nulla placerat viverra. Mattis aliquam hac
+                  pulvinar eget urna, sollicitudin feugiat vestibulum. Elementum
+                  sed sit odio senectus sem sit morbi lacus. Vitae at ac arcu
+                  posuere. Euismod gravida lacinia donec facilisis massa mauris.
+                  Lorem tortor ultrices.
+                </p>
+              </li>
+              <li class="category__tabs-item">
+                <a href="#" class="category__tabs-link">Графический дизайнер</a>
+                <span class="category__tabs-lessons">150 уроков</span>
+                <span class="category__tabs-lessons">200 заданий</span>
+                <p class="category__tabs-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+                  varius et a nulla placerat viverra. Mattis aliquam hac
+                  pulvinar eget urna, sollicitudin feugiat vestibulum. Elementum
+                  sed sit odio senectus sem sit morbi lacus. Vitae at ac arcu
+                  posuere. Euismod gravida lacinia donec facilisis massa mauris.
+                  Lorem tortor ultrices.
+                </p>
+              </li>
+              <li class="category__tabs-item">
+                <a href="#" class="category__tabs-link">Графический дизайнер</a>
+                <span class="category__tabs-lessons">150 уроков</span>
+                <span class="category__tabs-lessons">200 заданий</span>
+                <p class="category__tabs-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+                  varius et a nulla placerat viverra. Mattis aliquam hac
+                  pulvinar eget urna, sollicitudin feugiat vestibulum. Elementum
+                  sed sit odio senectus sem sit morbi lacus. Vitae at ac arcu
+                  posuere. Euismod gravida lacinia donec facilisis massa mauris.
+                  Lorem tortor ultrices.
+                </p>
+              </li>
+              <li class="category__tabs-item">
+                <a href="#" class="category__tabs-link">Графический дизайнер</a>
+                <span class="category__tabs-lessons">150 уроков</span>
+                <span class="category__tabs-lessons">200 заданий</span>
+                <p class="category__tabs-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+                  varius et a nulla placerat viverra. Mattis aliquam hac
+                  pulvinar eget urna, sollicitudin feugiat vestibulum. Elementum
+                  sed sit odio senectus sem sit morbi lacus. Vitae at ac arcu
+                  posuere. Euismod gravida lacinia donec facilisis massa mauris.
+                  Lorem tortor ultrices.
+                </p>
+              </li>
+              <li class="category__tabs-item">
+                <a href="#" class="category__tabs-link">Графический дизайнер</a>
+                <span class="category__tabs-lessons">150 уроков</span>
+                <span class="category__tabs-lessons">200 заданий</span>
+                <p class="category__tabs-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+                  varius et a nulla placerat viverra. Mattis aliquam hac
+                  pulvinar eget urna, sollicitudin feugiat vestibulum. Elementum
+                  sed sit odio senectus sem sit morbi lacus. Vitae at ac arcu
+                  posuere. Euismod gravida lacinia donec facilisis massa mauris.
+                  Lorem tortor ultrices.
+                </p>
+              </li>
+            </ul>
+            <a href="#" class="btn btn__danger">Смотреть все курсы академии</a>
+          </div>
+        </section>
+      </main>
       <footer></footer>
     </div>
   </body>

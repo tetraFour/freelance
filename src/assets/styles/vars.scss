@@ -1,8 +1,15 @@
 $black: #1A1A18;
 $white: #ffffff;
 $red: #EC4D32;
+$light-red-gradient: linear-gradient(129.99deg, #FF637B 22.42%, #F90217 79.28%);
 $dark-red-gradient: linear-gradient(329.41deg, #C02828 25.55%, #FF370B 98.36%);
 $green: #63DA39;
 $grey: #EFEFEF;
 $light-gray: #F0F3F8;
 $dark-grey: #AAB3C9;
+
+
+$device-width-full: 1200px;
+$device-width-large: 992px;
+$device-width-medium: 768px;
+$device-width-small: 576px;

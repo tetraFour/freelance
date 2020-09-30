@@ -5,3 +5,40 @@
     color: $black;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+.container {
+	width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+	@media screen and (max-width: $device-width-full) {
+        width: $device-width-large;
+    }
+	@media screen and (max-width: $device-width-large) {
+        width: $device-width-medium;
+    }
+	@media screen and (max-width: $device-width-medium) {
+        width: $device-width-small;
+    }
+	@media screen and (max-width: $device-width-small) {
+		width: 100%;
+		padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+ul, ol, dl {
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+}

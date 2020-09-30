@@ -1,0 +1,107 @@
+.category {
+    padding: 20px 0 160px;
+
+    &__title {
+        font-size: 55px;
+        font-weight: 800;
+        max-width: 620px;
+        margin-bottom: 60px;
+    }
+
+    &__tab-list-control {
+        display: flex;
+        margin-bottom: 60px;
+    }
+
+    &__tab-list-control-item {
+        margin-right: 30px;
+    }
+
+    &__tab-control {
+        font-weight: 700;
+        position: relative;
+        &::after {
+            content: "";
+            height: 100%;
+            width: 1px;
+            background: #E12B62;
+            position: absolute;
+            right: -7px;
+            top: 0;
+            transform: rotate(15deg);
+        }
+        &_active {
+            color: $white;
+            background: #E12B62;
+            padding: 2px 10px;
+
+            &::after {
+                content: none;
+            }
+        }
+    }
+    &__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__tabs-item {
+        position: relative;
+        width: 572px;
+        padding: 52px;
+        border-radius: 12px;
+        background-color: #f9faff;
+        background-image: url('/src/assets/images/icon/base/spiral-bg.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 43px;
+        transition: background .3s ease-in-out;
+
+        &:hover {
+            background-color: #1A1A18;
+            background-image: url('/src/assets/images/icon/base/spiral-bg-gray.svg');
+
+            .category__tabs-link {
+                color: $white;
+            }
+            .category__tabs-lessons, .category__tabs-desc {
+                color: #EFEFEF;
+            }
+        }
+    }
+
+    &__tabs-link {
+        font-size: 25px;
+        display: block;
+        font-weight: 700;
+        margin-bottom: 15px;
+        transition: color .3s ease-in-out;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__tabs-lessons {
+        margin-bottom: 20px;
+        display: inline-block;
+        transition: color .3s ease-in-out;
+    }
+
+    &__tabs-desc {
+        line-height: 23px;
+        font-weight: 400;
+        font-size: 14px;
+        transition: color .3s ease-in-out;
+    }
+
+    .btn__danger {
+        margin: 0 auto;
+    }
+}
